@@ -1,0 +1,7 @@
+# DEMO SAFETY: private website concept, keep out of search indexes.
+# At launch: change "Disallow: /" to "Allow: /" (and remove the noindex
+# meta tags and the X-Robots-Tag header in _headers).
+User-agent: *
+Disallow: /
+
+Sitemap: https://agavi-demo-central-tx-truck.pages.dev/sitemap.xml

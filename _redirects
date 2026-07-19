@@ -1,0 +1,7 @@
+# Internal docs deploy alongside the site (no build step strips them) -
+# shadow them so they are never publicly readable.
+/README.md / 302
+/README / 302
+/OWNER-CONFIRMATION.md / 302
+/OWNER-CONFIRMATION / 302
+/content.config.json / 302
