@@ -1,0 +1,68 @@
+/* Central Texas Truck & Trailer Repair — Theme A (Industrial)
+   Levers: signal-orange accent + hazard divider + header underbar
+   (see README.md for rationale / sibling-proof against muffler & glass sites) */
+:root{
+  --font-display:"Oswald",system-ui,sans-serif;
+  --display-transform:uppercase; --display-weight:700; --display-tracking:.005em; --display-lh:1.0;
+  --paper:#e9eaec; --surface:#ffffff; --surface-2:#d8dade;
+  --ink:#17191c; --ink-soft:#3d4147; --ink-faint:#6b7078;
+  --line:#c3c7cd; --line-strong:#9aa0a8;
+  --brand:#1c2024; --on-brand:#eef0f2;
+  --accent:#f26722; --on-accent:#141414;          /* signal-orange */
+  --accent-2:#2b2f34;
+  --radius:2px; --radius-lg:3px; --border-w:3px; --rule-w:1px;
+  --shadow:none; --lift:0px;
+  --divider-color:#9aa0a8; --divider-accent:var(--accent);
+  --slot-bg:#eceef0; --slot-line:#9aa0a8; --slot-tag-bg:#17191c;
+
+  /* lever: header underbar */
+  --header-underbar:5px;
+
+  /* photo hero — Theme A steel-dark tint (cool near-black on the text side,
+     lets the lowboy/desert photo read as atmosphere on the reveal side) */
+  --hero-tint-a:#101317;   /* content side — steel near-black */
+  --hero-tint-b:#242b32;   /* photo side  — cool steel        */
+}
+
+/* site-specific overrides */
+.wordmark__name{max-width:12ch}
+@media(min-width:420px){.wordmark__name{max-width:none}}
+
+.centerpiece__panel--split{align-items:start}
+.centerpiece aside h3{color:var(--ink)}
+
+/* Commercially-risky placeholder (towing / after-hours) — given real weight so
+   it can't be missed in the walk-in and never reads as a live offering. Shares
+   the review-slot silhouette: dashed keyline + hatch + corner tab + mono label. */
+.aside-slot{position:relative;margin-top:4px;
+  background:var(--slot-bg);background-image:var(--hatch);
+  border:2px dashed var(--slot-line);border-radius:var(--radius);
+  padding:18px 14px 14px}
+.aside-slot__tab{position:absolute;top:-1px;left:14px;transform:translateY(-50%);
+  font-family:var(--font-mono);font-size:.6rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;background:var(--slot-tag-bg);color:var(--slot-tag-ink);
+  padding:.35em .6em;border-radius:2px}
+.aside-slot__body{margin:0;font-family:var(--font-mono);font-size:.82rem;font-weight:600;
+  letter-spacing:.03em;text-transform:uppercase;color:var(--slot-ink)}
+
+/* Honeypot — visually removed, still in the form for bots. */
+.hp-field{position:absolute !important;left:-9999px;width:1px;height:1px;
+  overflow:hidden;opacity:0;pointer-events:none}
+
+/* Form failure fallback — form stays visible, phone number takes over. */
+.form-error{display:none;margin-top:14px;padding:14px 16px;
+  border:2px solid var(--accent);border-radius:var(--radius);
+  background:var(--surface)}
+.form-error p{margin:0;color:var(--ink)}
+.form-error .tel{font-family:var(--font-display);font-size:1.15rem;
+  white-space:nowrap;color:var(--ink)}
+.form-wrap.is-error .form-error{display:block}
+
+/* Rating line above review cards — verified figure, quiet presentation. */
+.reviews-rating{font-family:var(--font-mono);font-size:.78rem;font-weight:700;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);
+  margin:0 0 18px}
+
+/* Trustbar runs 3-up while the "Since" stat awaits the founding year
+   (base.css assumes 4 stats at >=600px). Remove with the TODO in index.html. */
+@media(min-width:600px){.trustbar__grid{grid-template-columns:repeat(3,1fr)}}

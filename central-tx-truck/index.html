@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central Texas Truck &amp; Trailer Repair | Brownwood, TX</title>
+<meta name="description" content="Heavy truck and trailer repair in Brownwood, TX. Diesel, trailer, and fleet work. Tell us what broke and where you are.">
+<link rel="canonical" href="https://agavi-demo-central-tx-truck.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Central Texas Truck &amp; Trailer Repair">
+<meta property="og:title" content="Central Texas Truck &amp; Trailer Repair | Brownwood, TX">
+<meta property="og:description" content="Heavy truck and trailer repair in Brownwood, TX. Diesel, trailer, and fleet work. Tell us what broke and where you are.">
+<meta property="og:url" content="https://agavi-demo-central-tx-truck.pages.dev/">
+<meta property="og:image" content="https://agavi-demo-central-tx-truck.pages.dev/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Central Texas Truck &amp; Trailer Repair | Brownwood, TX">
+<meta name="twitter:description" content="Heavy truck and trailer repair in Brownwood, TX. Diesel, trailer, and fleet work. Tell us what broke and where you are.">
+<meta name="twitter:image" content="https://agavi-demo-central-tx-truck.pages.dev/assets/og.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style"
+  href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap"
+  onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap"></noscript>
+<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="wordmark" href="#top">
+      <span class="wordmark__name">Central Texas Truck &amp; Trailer</span>
+      <span class="wordmark__sub">Brownwood, TX · Fleet &amp; Roadside</span>
+    </a>
+    <div class="header-actions">
+      <a class="btn btn--secondary" href="#request">Request service</a>
+      <a class="btn btn--primary" href="tel:+13256436492">Call the shop</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero hero--photo" id="top">
+  <!-- Generic industry photo (licensed lowboy/heavy-haul atmosphere) under a
+       heavy Theme-A steel tint — NOT the customer's premises. Offer to swap for
+       the shop's own photos after the walk-in. Credit line in footer (CC BY). -->
+  <img class="hero__photo" src="assets/hero.jpg" alt=""
+       width="1500" height="498" fetchpriority="high" decoding="async">
+  <div class="container">
+    <div class="hero__inner">
+      <p class="kicker">Diesel · Trailer · Fleet</p>
+      <h1 class="display">Back on the road, not stuck on the shoulder.</h1>
+      <p class="lead">Heavy truck and trailer repair in Brownwood. Tell us what
+        broke and where you are — we take it from there.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--block" href="tel:+13256436492">Call the shop</a>
+        <a class="btn btn--secondary btn--block" href="#request">Start a breakdown report</a>
+      </div>
+      <ul class="trust-strip">
+        <li>Brown County</li><li>Fleet &amp; owner-operator</li><li>Phone or form intake</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider divider-hazard"></div>
+
+<section class="trustbar"><div class="container"><div class="trustbar__grid">
+  <div class="stat"><span class="stat__k">Where</span><span class="stat__v">Brown County</span></div>
+  <div class="stat"><span class="stat__k">Serves</span><span class="stat__v">Fleet &amp; owner-operator</span></div>
+  <!-- TODO restore once founding year confirmed with owner:
+  <div class="stat"><span class="stat__k">Since</span>
+    <span class="stat__v">YEAR</span></div>
+  (also remove the 3-col trustbar override in styles.css when this returns) -->
+  <div class="stat"><span class="stat__k">Reviews</span><span class="stat__v">On Google &amp; Facebook</span></div>
+</div></div></section>
+
+<section class="section" id="services"><div class="container">
+  <div class="section__head">
+    <p class="kicker">What we do</p>
+    <h2 class="display">Services</h2>
+  </div>
+  <div class="grid cards">
+    <article class="card">
+      <h3>Diesel repair</h3>
+      <p>Engine diagnostics and repair for the trucks that run the highway every day.</p>
+      <p>Bring it in or tell us what it's doing.</p>
+    </article>
+    <article class="card">
+      <h3>Trailer repair</h3>
+      <p>Lights, brakes, axles, and welding on stock and flatbed trailers.</p>
+      <p>Bring it in or tell us where it sits.</p>
+    </article>
+    <article class="card">
+      <h3>Fleet service</h3>
+      <p>One shop that keeps working through every truck and trailer on your route.</p>
+      <p>Call ahead and we'll plan the bay around your schedule.</p>
+    </article>
+  </div>
+</div></section>
+
+<div class="section-divider divider-hazard"></div>
+
+<section class="section centerpiece" id="request">
+  <div class="container">
+    <p class="kicker">Breakdown report</p>
+    <h2 class="display">Tell us what broke and where.</h2>
+    <p class="centerpiece__lead">Two minutes now saves an hour of phone tag. Fill this out from the shoulder and we'll call you back.</p>
+    <div class="centerpiece__panel centerpiece__panel--split">
+      <div class="form-wrap" id="request-form">
+        <form class="form-fields" method="post" action="/api/breakdown">
+          <!-- Honeypot — hidden from real users; bots that fill it get a silent drop. -->
+          <div class="field hp-field" aria-hidden="true">
+            <label for="f-company">Company</label>
+            <input id="f-company" name="company" tabindex="-1" autocomplete="off"></div>
+          <div class="field"><label for="f-name">Name</label>
+            <input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone</label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="f-unit">Truck or trailer</label>
+            <select id="f-unit" name="unit">
+              <option value="">Select one</option>
+              <option value="truck">Truck</option>
+              <option value="trailer">Trailer</option>
+              <option value="both">Both</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-location">Location — highway &amp; mile marker</label>
+            <input id="f-location" name="location" placeholder="e.g. US-84, mile marker 142"></div>
+          <div class="field"><label for="f-problem">What's wrong</label>
+            <textarea id="f-problem" name="problem"></textarea></div>
+          <button class="btn btn--primary btn--block" type="submit">Send breakdown report</button>
+          <p class="form-note">We call you back at the number you leave.</p>
+          <!-- Callback-promise: OK with owner before launch -->
+        </form>
+        <div class="form-success"><div class="check">&#10003;</div>
+          <h3>Got it</h3><p>Thanks — we'll call you back at the number you left.</p></div>
+        <div class="form-error" role="alert">
+          <p><strong>That didn't go through.</strong> Call us instead —
+            <a class="tel" href="tel:+13256436492">325-643-6492</a>.</p>
+        </div>
+      </div>
+      <aside class="stack" style="--stack-gap:14px">
+        <h3 class="display" style="font-size:1.1rem">Prefer to call it in</h3>
+        <p style="margin:0;color:var(--ink-soft)">Same information, faster if you're already on the phone.</p>
+        <a class="btn btn--secondary btn--block" href="tel:+13256436492">Call the shop</a>
+        <!-- TODO (hidden for pitch, still open with owner): is any after-hours or
+             towing service offered? Claims-safety §1 forbids publishing
+             towing/emergency availability unconfirmed. If offered, promote to a
+             real service line here; if not, this stays as-is. -->
+        <p class="form-note">Call during shop hours for the fastest response.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY: ships hidden (SHOW_GALLERY=false in app.js) until real shop photos
+     are pulled from the owner's Facebook page — no empty frames during the pitch.
+     To re-enable: set SHOW_GALLERY=true in app.js (it strips the hidden attrs),
+     or delete the hidden attributes on the two elements below. -->
+<div class="section-divider divider-hazard" data-flag="gallery" hidden></div>
+
+<section class="section" id="gallery" data-flag="gallery" hidden><div class="container">
+  <div class="section__head">
+    <p class="kicker">In the shop</p>
+    <h2 class="display">A look at the work</h2>
+  </div>
+  <div class="grid gallery">
+    <figure class="ph"><div class="ph__frame">
+      <span class="ph__ratio">4:3</span>
+      <span class="ph__chip">PHOTO — shop exterior &amp; sign · pull from Facebook</span>
+    </div></figure>
+    <figure class="ph"><div class="ph__frame">
+      <span class="ph__ratio">4:3</span>
+      <span class="ph__chip">PHOTO — engine bay repair in progress · pull from Facebook</span>
+    </div></figure>
+    <figure class="ph"><div class="ph__frame">
+      <span class="ph__ratio">4:3</span>
+      <span class="ph__chip">PHOTO — trailer axle or brake work · pull from Facebook</span>
+    </div></figure>
+    <figure class="ph"><div class="ph__frame">
+      <span class="ph__ratio">4:3</span>
+      <span class="ph__chip">PHOTO — shop bay &amp; equipment · pull from Facebook</span>
+    </div></figure>
+  </div>
+</div></section>
+
+<div class="section-divider divider-hazard"></div>
+
+<section class="section section--tint" id="reviews"><div class="container">
+  <div class="section__head">
+    <p class="kicker">What customers say</p>
+    <h2 class="display">Word gets around</h2>
+  </div>
+  <!-- Reviews below are operator-supplied verbatim Google reviews (2026-07-13),
+       typos preserved deliberately — do NOT copyedit them. [FIRST NAME] is
+       filled from the live Google listing before launch to keep attribution
+       accurate. Rating line 4.8/67 operator-verified 2026-07-13 (earlier
+       verification.md figure was 4.8/72 — count moves; reconfirm at launch). -->
+  <p class="reviews-rating">4.8 &#9733; &middot; 67 Google reviews</p>
+  <div class="grid cards">
+    <figure class="review">
+      <div class="review__mark">&ldquo;</div>
+      <blockquote class="review__quote">Great service , cost was way less then quoted got me in for an emergency repair on the spot and had all the parts needed on hand. Great crew of guys will definitely be coming back if I ever need service again !</blockquote>
+      <figcaption class="review__by">[FIRST NAME] &middot; <span class="review__src">Google review</span></figcaption>
+    </figure>
+    <figure class="review">
+      <div class="review__mark">&ldquo;</div>
+      <blockquote class="review__quote">Awesome Service guys were fantastic. Had me out of here in a half an hour much less than what I thought it would cost.</blockquote>
+      <figcaption class="review__by">[FIRST NAME] &middot; <span class="review__src">Google review</span></figcaption>
+    </figure>
+    <figure class="review">
+      <div class="review__mark">&ldquo;</div>
+      <blockquote class="review__quote">We went there to get our electrical cable that plugs into the truck from the camper repaired... The staff fixed the cable promptly but more than that, they treated us with dignity and respect. I would highly recommend them to everyone.</blockquote>
+      <figcaption class="review__by">[FIRST NAME] &middot; <span class="review__src">Google review</span></figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<div class="section-divider divider-hazard"></div>
+
+<section class="section" id="hours"><div class="container">
+  <div class="info-block">
+    <div class="info-card"><h3>Find us</h3>
+      <address class="addr">2800 Virgil Gray Dr, Brownwood, TX 76801<br>
+        <a class="tel" href="tel:+13256436492">325-643-6492</a></address>
+      <p class="form-note" style="margin-top:14px">
+        <a href="https://www.facebook.com/p/Central-Texas-Truck-and-Trailer-Repair-100054672540311/" target="_blank" rel="noopener">Find us on Facebook</a>
+      </p>
+    </div>
+    <div class="info-card"><h3>Hours</h3>
+      <ul class="hours">
+        <li><span class="day">Mon&ndash;Fri</span><span class="time">8 AM&ndash;5:30 PM</span></li>
+        <li><span class="day">Sat&ndash;Sun</span><span class="time">Closed</span></li>
+        <!-- Hours operator-verified against the Google listing 2026-07-13
+             (M-F 8-5:30, weekend closed). Earlier NAPA AutoCare listing said 8-5;
+             mention the mismatch to the owner at the walk-in. -->
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<footer class="site-footer"><div class="container footer__grid">
+  <div>
+    <p class="footer__name">Central Texas Truck &amp; Trailer</p>
+    <p class="footer__credit">Site concept by Agavi AI ·
+      <a href="https://agaviai.com">agaviai.com</a></p>
+    <p class="footer__credit" style="text-transform:none;letter-spacing:.02em">Background photo: Mark Holloway / CC BY 2.0</p>
+  </div>
+  <div>
+    <h3 style="font-family:var(--font-display);font-size:1rem;margin-bottom:.5em">Hours</h3>
+    <p style="margin:0">Mon&ndash;Fri 8 AM&ndash;5:30 PM</p>
+    <p style="margin:0">Sat&ndash;Sun: Closed</p>
+  </div>
+  <div>
+    <h3 style="font-family:var(--font-display);font-size:1rem;margin-bottom:.5em">Contact</h3>
+    <p style="margin:0">2800 Virgil Gray Dr<br>Brownwood, TX 76801</p>
+    <p style="margin-top:.5em"><a class="tel" href="tel:+13256436492">325-643-6492</a></p>
+  </div>
+</div></footer>
+
+<nav class="action-bar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="#request">Report breakdown</a>
+  <a class="btn btn--secondary" href="tel:+13256436492">Call</a>
+</nav>
+
+<script src="app.js"></script>
+<!-- Cloudflare Web Analytics — TWO ways to enable (pick one):
+     1. EASIEST: Pages dashboard → agavi-demo-central-tx-truck → Metrics →
+        enable Web Analytics. Cloudflare auto-injects the beacon; leave this
+        comment as-is.
+     2. MANUAL: dash.cloudflare.com → Analytics → Web Analytics → Add a site
+        (agavi-demo-central-tx-truck.pages.dev), copy the token, then uncomment
+        and fill in:
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "PASTE_TOKEN_HERE"}'></script>
+-->
+</body>
+</html>
