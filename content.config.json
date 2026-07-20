@@ -1,0 +1,55 @@
+{
+  "_comment": "Confirmation ledger for customer-facing claims. Pending items must not appear in customer-facing copy and must be resolved before DEMO_MODE is turned off.",
+  "demo_mode": true,
+  "business": {
+    "name": { "value": "Central Texas Truck & Trailer Repair", "status": "confirmed" },
+    "address": { "value": "2800 Virgil Gray Dr, Brownwood, TX 76801", "status": "confirmed" },
+    "phone": { "value": "325-643-6492", "status": "confirmed" },
+    "founded": { "value": "1998 (local start), ownership change 2014", "status": "pending-owner", "note": "Public research only. Not shown on the page until confirmed." },
+    "employees": { "value": "approx. six", "status": "pending-owner", "note": "Not shown on the page." },
+    "hours": { "value": "Mon-Fri 8 AM-5:30 PM, weekends closed", "status": "pending-owner", "note": "Shown with a call-to-confirm caveat. Verify with owner before launch." },
+    "napa_affiliation": { "value": "NAPA AutoCare Center", "status": "confirmed", "note": "Verified against the official NAPA facility directory, facility 675503, 2026-07-20." }
+  },
+  "services": {
+    "confirmed_enough_for_demo": [
+      "Heavy truck repair",
+      "Mobile and roadside repair",
+      "Trailer repair",
+      "Diesel diagnostics and repair",
+      "Fleet maintenance",
+      "Electrical diagnosis and wiring",
+      "Brakes",
+      "Axles and wheel seals",
+      "Suspension",
+      "Welding"
+    ],
+    "pending_owner_confirmation": [
+      "AC and heating",
+      "Exhaust",
+      "Sheet-metal fabrication",
+      "Aluminum fabrication",
+      "Inspections",
+      "Trailer floors and gates",
+      "Fault code reading as a stand-alone service"
+    ],
+    "never_claim_without_separate_confirmation": [
+      "24/7 availability",
+      "Towing",
+      "Guaranteed response time",
+      "Specific service radius",
+      "Exact review count",
+      "BBB accreditation",
+      "Certifications",
+      "Warranties"
+    ]
+  },
+  "reviews": {
+    "source": "Verbatim Google reviews, operator-collected 2026-07-13, typos preserved",
+    "attribution": "verified",
+    "note": "Names verified against live Google listing screenshots 2026-07-20: Kodie Scott, Russell Howard, Valerie Kroeker. No star rating or review count is printed anywhere."
+  },
+  "gallery": {
+    "status": "capability-preview",
+    "note": "Service illustrations demonstrate the gallery layout without claiming completed work. Replace them only with business-owned or owner-approved photography."
+  }
+}
