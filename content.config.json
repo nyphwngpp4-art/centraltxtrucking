@@ -44,8 +44,8 @@
   },
   "reviews": {
     "source": "Verbatim Google reviews, operator-collected 2026-07-13, typos preserved",
-    "attribution": "pending-owner",
-    "note": "Reviewer first names must be verified against the live Google listing before launch; until then attribution reads 'Google review'. No star rating or review count is printed anywhere."
+    "attribution": "verified",
+    "note": "Names verified against live Google listing screenshots 2026-07-20: Kodie Scott, Russell Howard, Valerie Kroeker. No star rating or review count is printed anywhere."
   },
   "gallery": {
     "status": "pending-owner",

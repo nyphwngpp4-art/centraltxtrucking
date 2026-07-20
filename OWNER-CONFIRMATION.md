@@ -10,7 +10,7 @@ only to the developer).
 | # | Item | Where it appears | Current handling |
 |---|------|------------------|------------------|
 | 1 | Hours: Mon-Fri 8 AM-5:30 PM, weekends closed | Location section, footer, FAQ | Shown with a "call to confirm" caveat |
-| 2 | Review attributions (reviewer first names) | Reviews section | Quotes are verbatim; attribution reads "Google review" until names are verified against the live listing |
+| 2 | Review attributions | Reviews section | CLOSED 2026-07-20: names verified against live Google listing screenshots (Kodie Scott, Russell Howard, Valerie Kroeker) |
 | 3 | Services marked `data-confirm="pending"` in index.html: AC & heating, exhaust, floors & gates, fault code reading, sheet-metal fabrication, aluminum fabrication, inspections | Services section | Rendered in the concept; confirm or remove each before launch |
 | 4 | Welding/fabrication FAQ answer | FAQ | Cautiously worded; confirm scope |
 
