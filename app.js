@@ -1,30 +1,19 @@
 // Central Texas Truck & Trailer Repair - concept site behavior.
-// No dependencies. Everything degrades: the form posts without JS and the
-// hero stays a static image unless a video is explicitly enabled.
+// No dependencies. Everything degrades: the form posts without JavaScript,
+// while progressive disclosure only shortens the enhanced experience.
 
-// ===== optional hero video (large screens only, off by default) =====
-// Flip to true only after an owner-approved, compressed video exists at
-// assets/hero.mp4. Mobile, reduced-motion and reduced-data users always
-// keep the static image.
-const HERO_VIDEO = false;
+// ===== shop vs. mobile service details ====================================
+const serviceType = document.getElementById('f-service-type');
+const roadsideFields = document.getElementById('roadside-fields');
 
-if (HERO_VIDEO) {
-  const wantsVideo =
-    window.matchMedia('(min-width: 960px)').matches &&
-    !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-    !(navigator.connection && (navigator.connection.saveData ||
-      /2g/.test(navigator.connection.effectiveType || '')));
-  const media = document.querySelector('.hero__media');
-  if (wantsVideo && media) {
-    const v = document.createElement('video');
-    v.muted = true;
-    v.loop = true;
-    v.playsInline = true;
-    v.autoplay = true;
-    v.setAttribute('aria-hidden', 'true');
-    v.src = 'assets/hero.mp4';
-    media.appendChild(v);
-  }
+function syncServiceFields() {
+  if (!serviceType || !roadsideFields) return;
+  roadsideFields.hidden = serviceType.value !== 'mobile';
+}
+
+if (serviceType && roadsideFields) {
+  serviceType.addEventListener('change', syncServiceFields);
+  syncServiceFields();
 }
 
 // ===== browser geolocation (optional, user-initiated only) =====
@@ -72,7 +61,7 @@ document.querySelectorAll('.form-wrap form').forEach(form => {
     form.querySelectorAll('[required]').forEach(el => {
       const bad = el.name === 'phone'
         ? (el.value.replace(/\D/g, '').length < 7)
-        : !el.value.trim();
+        : !el.checkValidity();
       markInvalid(el, bad);
       if (bad && !firstBad) firstBad = el;
     });

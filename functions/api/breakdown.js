@@ -31,6 +31,7 @@ const TEXT_FIELDS = {
 
 // Enum fields: any value outside the list is stored as "".
 const ENUM_FIELDS = {
+  service_type: ["shop", "mobile", "unsure"],
   unit_type: ["truck", "trailer", "both", "other"],
   safety: ["safe", "shoulder", "blocking", "not_roadside"],
   can_move: ["yes", "no", "unsure"],
@@ -100,7 +101,8 @@ async function handlePost({ request, env }) {
   }
 
   const phoneDigits = lead.phone.replace(/\D/g, "");
-  if (!lead.name || !lead.unit_type ||
+  if (!lead.name || !lead.service_type || !lead.unit_type ||
+      lead.description.length < 10 ||
       phoneDigits.length < 7 || phoneDigits.length > 15) {
     return respond(request, false, 422);
   }
@@ -159,6 +161,7 @@ function formatLeadText(lead) {
     ``,
     `Name:        ${lead.name}`,
     `Phone:       ${lead.phone}`,
+    `Service:     ${lead.service_type}`,
     `Fleet:       ${lead.fleet || "-"}`,
     `Unit #:      ${lead.unit_number || "-"}`,
     `Unit type:   ${lead.unit_type}`,

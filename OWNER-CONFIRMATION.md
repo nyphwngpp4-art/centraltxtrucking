@@ -11,33 +11,34 @@ only to the developer).
 |---|------|------------------|------------------|
 | 1 | Hours: Mon-Fri 8 AM-5:30 PM, weekends closed | Location section, footer, FAQ | Shown with a "call to confirm" caveat |
 | 2 | Review attributions | Reviews section | CLOSED 2026-07-20: names verified against live Google listing screenshots (Kodie Scott, Russell Howard, Valerie Kroeker) |
-| 3 | Services marked `data-confirm="pending"` in index.html: AC & heating, exhaust, floors & gates, fault code reading, sheet-metal fabrication, aluminum fabrication, inspections | Services section | Rendered in the concept; confirm or remove each before launch |
+| 3 | Additional services: AC & heating, exhaust, floors & gates, fault code reading, sheet-metal fabrication, aluminum fabrication, inspections | Not currently rendered | Add only after the owner confirms each one |
 | 4 | Welding/fabrication FAQ answer | FAQ | Cautiously worded; confirm scope |
+| 5 | Mobile and roadside repair | Hero, services, form, FAQ | CLOSED 2026-07-20: confirmed by operator; availability and service area remain qualified |
+| 6 | NAPA AutoCare affiliation | Hero and trust strip | CLOSED 2026-07-20: verified in official NAPA facility directory, facility 675503 |
 
 ## Facts researched but NOT shown (need confirmation before ever publishing)
 
 | # | Item | Status |
 |---|------|--------|
-| 5 | Started locally in 1998 | Public research only; not on the page |
-| 6 | Ownership change in 2014 | Public research only; not on the page |
-| 7 | Approximately six employees | Public research only; not on the page |
+| 7 | Started locally in 1998 | Public research only; not on the page |
+| 8 | Ownership change in 2014 | Public research only; not on the page |
+| 9 | Approximately six employees | Public research only; not on the page |
 
 ## Never claim without separate written confirmation
 
-24/7 availability, towing, mobile roadside service, guaranteed response
-times, a specific service radius, exact review counts or star ratings, BBB
+24/7 availability, towing, guaranteed response times, a specific service
+radius, exact review counts or star ratings, BBB
 accreditation, certifications, warranties.
 
 ## Assets needed from the owner
 
 | # | Item | Notes |
 |---|------|-------|
-| 8 | Shop photography | Bays, heavy trucks, trailer brake/axle work, welding, aluminum fabrication, electrical, equipment, staff. Business-owned or owner-approved only; never AI-generated or stock presented as the shop's work |
-| 9 | Optional hero video | Only if the owner wants it; large screens only, static image stays the default |
-| 10 | Answer to "mobile or roadside service?" | FAQ currently says to call and confirm; replace with the owner's definitive answer |
+| 10 | Shop photography | The concept now uses clearly illustrative service cards. Replace them with bays, trucks, repair work, equipment and staff only when owner-approved photography becomes available |
 
 ## Launch-day technical flips (developer)
 
+- Run `PRODUCTION_DOMAIN=example.com npm run validate:production` and do not deploy if it fails.
 - Set `DEMO_MODE="false"` on the Pages project.
 - Point lead delivery at the shop's chosen inbox/number (currently developer-only).
 - Remove `noindex` meta tags, the `X-Robots-Tag` header line, and switch

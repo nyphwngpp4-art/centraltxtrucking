@@ -6,10 +6,12 @@ demonstration prepared for owner review; it is not the business's live site.
 ## Layout
 
 ```
-/                      index.html, operations.html, thanks.html, call-us.html
+/                      index.html, thanks.html, call-us.html
 /styles.css, /app.js   single stylesheet + dependency-free JS
-/assets/               images, favicon, self-hosted display font
+/assets/               schematic hero, icons, favicon, self-hosted display font
 /functions/api/        breakdown.js (POST intake), leads.js (GET, token-auth)
+/scripts/              dependency-free launch validation
+.github/workflows/     pull-request and main-branch quality gate
 _headers, _redirects   security headers, noindex, internal-doc shadowing
 robots.txt, sitemap.xml
 content.config.json    confirmation ledger for customer-facing claims
@@ -35,13 +37,29 @@ OWNER-CONFIRMATION.md  checklist to close before launch
 - The form explicitly states test submissions are not sent to the shop, and
   the success state promises no callback and no dispatch.
 - No photo upload (storage/deletion policies not configured yet).
-- No claims of towing, roadside service, 24/7, response times, service
-  radius, review counts, certifications or warranties anywhere.
+- Mobile and roadside repair are shown as available, with availability and
+  service-area caveats. No claims of towing, 24/7 coverage, response times,
+  service radius, review counts, certifications or warranties appear.
+- The official NAPA facility directory confirms the NAPA AutoCare affiliation.
+
+## Validate
+
+```
+npm run validate:demo
+```
+
+Production deployment must pass the stricter gate after all owner-confirmation
+items are closed and the customer-facing files have been switched out of demo
+mode:
+
+```
+PRODUCTION_DOMAIN=example.com npm run validate:production
+```
 
 ## Deploy (demo project only)
 
 ```
-npx wrangler pages deploy . --project-name=agavi-demo-central-tx-truck
+npm run deploy:demo
 ```
 
 Do not point a production domain at this project until the owner has approved

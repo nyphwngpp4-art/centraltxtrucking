@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 650" role="img" aria-labelledby="title desc">
+  <title id="title">Truck repair shop schematic</title>
+  <desc id="desc">An illustrative line drawing of a truck parked beside a three-bay repair shop.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#252a30"/>
+      <stop offset="1" stop-color="#111316"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#7d848b" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+    <pattern id="hazard" width="42" height="42" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="21" height="42" fill="#f26722"/>
+      <rect x="21" width="21" height="42" fill="#17191c"/>
+    </pattern>
+  </defs>
+  <rect width="1500" height="650" fill="url(#bg)"/>
+  <rect width="1500" height="650" fill="url(#grid)"/>
+  <path d="M0 560H1500" stroke="#f26722" stroke-width="5"/>
+  <rect y="575" width="1500" height="75" fill="url(#hazard)" opacity=".18"/>
+
+  <g fill="none" stroke="#d5d3cd" stroke-width="5" stroke-linejoin="round" opacity=".78">
+    <path d="M770 191h570v369H770z"/>
+    <path d="M740 191l88-82h454l88 82"/>
+    <path d="M817 257h145v303H817zM984 257h145v303H984zM1151 257h145v303h-145z"/>
+    <path d="M840 290h99M1007 290h99M1174 290h99" opacity=".45"/>
+    <path d="M840 326h99M1007 326h99M1174 326h99" opacity=".24"/>
+  </g>
+
+  <g transform="translate(105 292)" fill="none" stroke="#f0ede7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 203h494v-83l-72-14-57-80H250v177H42z"/>
+    <path d="M407 26v94h129M268 51h112l44 67H268z"/>
+    <path d="M61 154h165M504 151h32M239 203h144M228 118V39h20"/>
+    <circle cx="100" cy="205" r="46" fill="#17191c"/>
+    <circle cx="100" cy="205" r="18" stroke="#f26722"/>
+    <circle cx="202" cy="205" r="46" fill="#17191c"/>
+    <circle cx="202" cy="205" r="18" stroke="#f26722"/>
+    <circle cx="456" cy="205" r="52" fill="#17191c"/>
+    <circle cx="456" cy="205" r="21" stroke="#f26722"/>
+  </g>
+
+  <g transform="translate(555 77)" fill="none" stroke="#f26722" stroke-width="6" stroke-linecap="round">
+    <circle cx="92" cy="92" r="30"/>
+    <path d="M92 18v30M92 136v30M18 92h30M136 92h30M40 40l21 21M123 123l21 21M144 40l-21 21M61 123l-21 21"/>
+  </g>
+</svg>

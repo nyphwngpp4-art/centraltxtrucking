@@ -1,5 +1,5 @@
 {
-  "_comment": "Confirmation ledger for customer-facing claims. Nothing here changes rendering; it records what the owner must confirm before launch. Items marked pending correspond to data-confirm=\"pending\" attributes in index.html and must be confirmed or removed before DEMO_MODE is turned off.",
+  "_comment": "Confirmation ledger for customer-facing claims. Pending items must not appear in customer-facing copy and must be resolved before DEMO_MODE is turned off.",
   "demo_mode": true,
   "business": {
     "name": { "value": "Central Texas Truck & Trailer Repair", "status": "confirmed" },
@@ -7,11 +7,13 @@
     "phone": { "value": "325-643-6492", "status": "confirmed" },
     "founded": { "value": "1998 (local start), ownership change 2014", "status": "pending-owner", "note": "Public research only. Not shown on the page until confirmed." },
     "employees": { "value": "approx. six", "status": "pending-owner", "note": "Not shown on the page." },
-    "hours": { "value": "Mon-Fri 8 AM-5:30 PM, weekends closed", "status": "pending-owner", "note": "Shown with a call-to-confirm caveat. Verify with owner before launch." }
+    "hours": { "value": "Mon-Fri 8 AM-5:30 PM, weekends closed", "status": "pending-owner", "note": "Shown with a call-to-confirm caveat. Verify with owner before launch." },
+    "napa_affiliation": { "value": "NAPA AutoCare Center", "status": "confirmed", "note": "Verified against the official NAPA facility directory, facility 675503, 2026-07-20." }
   },
   "services": {
     "confirmed_enough_for_demo": [
       "Heavy truck repair",
+      "Mobile and roadside repair",
       "Trailer repair",
       "Diesel diagnostics and repair",
       "Fleet maintenance",
@@ -33,7 +35,6 @@
     "never_claim_without_separate_confirmation": [
       "24/7 availability",
       "Towing",
-      "Mobile roadside service",
       "Guaranteed response time",
       "Specific service radius",
       "Exact review count",
@@ -48,7 +49,7 @@
     "note": "Names verified against live Google listing screenshots 2026-07-20: Kodie Scott, Russell Howard, Valerie Kroeker. No star rating or review count is printed anywhere."
   },
   "gallery": {
-    "status": "pending-owner",
-    "note": "Photo slots only. Populate exclusively with business-owned or owner-approved photos. Never AI-generated or stock imagery presented as the shop's work."
+    "status": "capability-preview",
+    "note": "Service illustrations demonstrate the gallery layout without claiming completed work. Replace them only with business-owned or owner-approved photography."
   }
 }

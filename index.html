@@ -4,27 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Central Texas Truck &amp; Trailer Repair | Brownwood, TX</title>
-<meta name="description" content="Heavy truck and trailer repair in Brownwood, Texas. Diesel diagnostics, trailer repairs, electrical work, welding and fleet maintenance.">
+<meta name="description" content="NAPA AutoCare Center for truck and trailer repair in Brownwood, Texas, with diesel diagnostics, fabrication, fleet maintenance and mobile roadside service.">
 <!-- DEMO SAFETY: keep noindex until the owner approves this concept for launch. -->
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://agavi-demo-central-tx-truck.pages.dev/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Central Texas Truck &amp; Trailer Repair">
 <meta property="og:title" content="Central Texas Truck &amp; Trailer Repair | Brownwood, TX">
-<meta property="og:description" content="Heavy truck and trailer repair in Brownwood, Texas. Diesel diagnostics, trailer repairs, electrical work, welding and fleet maintenance.">
+<meta property="og:description" content="Shop-based truck and trailer repair in Brownwood, Texas, with mobile roadside service available.">
 <meta property="og:url" content="https://agavi-demo-central-tx-truck.pages.dev/">
 <meta property="og:image" content="https://agavi-demo-central-tx-truck.pages.dev/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Central Texas Truck &amp; Trailer Repair | Brownwood, TX">
-<meta name="twitter:description" content="Heavy truck and trailer repair in Brownwood, Texas. Diesel diagnostics, trailer repairs, electrical work, welding and fleet maintenance.">
+<meta name="twitter:description" content="Shop-based truck and trailer repair in Brownwood, Texas, with mobile roadside service available.">
 <meta name="twitter:image" content="https://agavi-demo-central-tx-truck.pages.dev/assets/og.png">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/oswald-latin-var.woff2" crossorigin>
-<link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high"
-      imagesrcset="assets/hero-mobile.jpg 720w, assets/hero.jpg 1500w" imagesizes="100vw">
+<link rel="preload" as="image" href="assets/hero-schematic.svg" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
@@ -37,6 +36,11 @@
       "url": "https://agavi-demo-central-tx-truck.pages.dev/",
       "telephone": "+1-325-643-6492",
       "image": "https://agavi-demo-central-tx-truck.pages.dev/assets/og.png",
+      "sameAs": "https://www.napaonline.com/en/autocare/?facilityId=675503",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "NAPA AutoCare"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2800 Virgil Gray Dr",
@@ -50,6 +54,7 @@
         "name": "Repair services",
         "itemListElement": [
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Truck and diesel repair", "serviceType": "Heavy truck repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile roadside repair", "serviceType": "Mobile truck and trailer repair"}},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trailer repair", "serviceType": "Trailer repair"}},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical and diagnostics", "serviceType": "Vehicle electrical diagnosis"}},
           {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Brakes, axles and suspension", "serviceType": "Brake and suspension repair"}},
@@ -95,7 +100,7 @@
         {
           "@type": "Question",
           "name": "Do you provide mobile or roadside service?",
-          "acceptedAnswer": {"@type": "Answer", "text": "Call the shop at 325-643-6492 to confirm current availability. This website does not dispatch roadside service."}
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Mobile and roadside repair are available, subject to technician availability and service area. For an immediate roadside need, call 325-643-6492."}
         }
       ]
     }
@@ -133,24 +138,30 @@
 
 <section class="hero steel" id="top">
   <div class="hero__media">
-    <!-- Static image everywhere by default. app.js can swap in an optional muted
-         video on large screens only (HERO_VIDEO flag), honoring reduced motion
-         and reduced data. No video asset ships with this concept. -->
-    <img src="assets/hero.jpg"
-         srcset="assets/hero-mobile.jpg 720w, assets/hero.jpg 1500w"
-         sizes="100vw" alt="" width="1500" height="498"
+    <!-- A clearly illustrative schematic stands in for owner photography. It
+         demonstrates the finished visual direction without presenting stock or
+         generated work as the shop's own. -->
+    <img src="assets/hero-schematic.svg" alt="" width="1500" height="650"
          fetchpriority="high" decoding="async">
   </div>
   <div class="container">
     <div class="hero__inner">
-      <p class="eyebrow">Heavy Truck &middot; Trailer &middot; Fabrication</p>
-      <h1 class="display">Heavy truck and trailer work built around uptime.</h1>
-      <p class="lead">Diesel diagnostics, trailer repairs, electrical work, welding and fleet maintenance in Brownwood, Texas.</p>
+      <p class="eyebrow">NAPA AutoCare Center &middot; Shop &amp; Mobile Service</p>
+      <h1 class="display">Truck and trailer repair that keeps Central Texas moving.</h1>
+      <p class="lead">Shop-based diesel, trailer, electrical and fabrication work in Brownwood, with mobile roadside repair available when the unit cannot come to us.</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#request">Start a Repair Request</a>
+        <a class="btn btn--primary" href="#request">Request Service</a>
         <a class="btn btn--steel" href="tel:+13256436492">Call 325-643-6492</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="trust-strip" aria-label="Service highlights">
+  <div class="container trust-strip__grid">
+    <p><strong>Brownwood repair shop</strong><span>Truck, trailer and fleet service</span></p>
+    <p><strong>Mobile service available</strong><span>Call first for roadside availability</span></p>
+    <p><strong>NAPA AutoCare Center</strong><span>Listed in the official NAPA directory</span></p>
   </div>
 </section>
 
@@ -194,18 +205,16 @@
       <h2 class="display">Services</h2>
       <p class="lead">From diagnostics to fabrication, handled in one shop.</p>
     </div>
-    <!-- Service confirmation status lives in content.config.json. Items marked
-         data-confirm="pending" are supported by public records but must be
-         confirmed by the owner before this page goes live. -->
+    <!-- Service confirmation status lives in content.config.json. Unconfirmed
+         services stay out of customer-facing copy until the owner approves them. -->
     <div class="services">
       <article class="service">
-        <h3>Truck &amp; diesel repair</h3>
-        <p>Engine work and diagnostics for the trucks that earn their keep on the highway.</p>
+        <h3>Truck, diesel &amp; roadside repair</h3>
+        <p>Shop-based engine work and diagnostics, with mobile repair available when the unit cannot come in.</p>
         <ul>
           <li>Diesel diagnostics</li>
           <li>Engine repair</li>
-          <li data-confirm="pending">AC &amp; heating</li>
-          <li data-confirm="pending">Exhaust</li>
+          <li>Mobile roadside service</li>
         </ul>
       </article>
       <article class="service">
@@ -214,7 +223,6 @@
         <ul>
           <li>Trailer repair</li>
           <li>Lights &amp; wiring</li>
-          <li data-confirm="pending">Floors &amp; gates</li>
         </ul>
       </article>
       <article class="service">
@@ -223,7 +231,6 @@
         <ul>
           <li>Electrical diagnosis</li>
           <li>Wiring repair</li>
-          <li data-confirm="pending">Fault code reading</li>
         </ul>
       </article>
       <article class="service">
@@ -240,8 +247,6 @@
         <p>Repair welding and custom metal work built in the shop.</p>
         <ul>
           <li>Welding</li>
-          <li data-confirm="pending">Sheet-metal fabrication</li>
-          <li data-confirm="pending">Aluminum fabrication</li>
         </ul>
       </article>
       <article class="service">
@@ -249,7 +254,6 @@
         <p>Scheduled maintenance that keeps a working fleet out of the ditch.</p>
         <ul>
           <li>Fleet maintenance</li>
-          <li data-confirm="pending">Inspections</li>
         </ul>
       </article>
     </div>
@@ -263,8 +267,8 @@
   <div class="container">
     <div class="section__head">
       <p class="eyebrow">Repair request</p>
-      <h2 class="display">Tell the shop what is down before the call back.</h2>
-      <p class="lead">Two minutes of detail here means the first call starts with answers, not twenty questions.</p>
+      <h2 class="display">Five details now. A better first call back.</h2>
+      <p class="lead">Choose shop or mobile service, identify the unit and tell us what happened. Add the technical details only if you have them.</p>
     </div>
     <div class="intake-grid">
       <div class="form-wrap" id="request-form">
@@ -276,60 +280,58 @@
           </div>
 
           <fieldset>
-            <legend>Who to call back</legend>
+            <legend>Contact and service</legend>
+            <p class="required-note">Five quick fields. Everything else is optional.</p>
             <div class="field-row field-row--2">
               <div class="field">
-                <label for="f-name">Name</label>
-                <input id="f-name" name="name" autocomplete="name" required maxlength="80">
-                <p class="error-text">Enter a name so the shop knows who to ask for.</p>
+                <label for="f-name">Name <span class="required-label">Required</span></label>
+                <input id="f-name" name="name" autocomplete="name" required maxlength="80" aria-describedby="error-name">
+                <p class="error-text" id="error-name">Enter a name so the shop knows who to ask for.</p>
               </div>
               <div class="field">
-                <label for="f-phone">Phone</label>
-                <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="25">
-                <p class="error-text">Enter a phone number with at least 7 digits.</p>
+                <label for="f-phone">Phone <span class="required-label">Required</span></label>
+                <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="25" aria-describedby="error-phone">
+                <p class="error-text" id="error-phone">Enter a phone number with at least 7 digits.</p>
               </div>
             </div>
             <div class="field-row field-row--2">
               <div class="field">
-                <label for="f-fleet">Company or fleet <span aria-hidden="true">(optional)</span></label>
-                <input id="f-fleet" name="fleet" autocomplete="organization" maxlength="120">
+                <label for="f-service-type">Where do you need service? <span class="required-label">Required</span></label>
+                <select id="f-service-type" name="service_type" required aria-describedby="error-service-type">
+                  <option value="">Select one</option>
+                  <option value="shop">I can bring it to the shop</option>
+                  <option value="mobile">I need mobile or roadside service</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+                <p class="error-text" id="error-service-type">Choose shop, mobile or not sure.</p>
               </div>
               <div class="field">
-                <label for="f-unit-number">Unit number <span aria-hidden="true">(optional)</span></label>
-                <input id="f-unit-number" name="unit_number" maxlength="40">
-              </div>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend>The unit</legend>
-            <div class="field-row field-row--2">
-              <div class="field">
-                <label for="f-unit-type">Truck, trailer or other</label>
-                <select id="f-unit-type" name="unit_type" required>
+                <label for="f-unit-type">Truck, trailer or other <span class="required-label">Required</span></label>
+                <select id="f-unit-type" name="unit_type" required aria-describedby="error-unit-type">
                   <option value="">Select one</option>
                   <option value="truck">Truck</option>
                   <option value="trailer">Trailer</option>
                   <option value="both">Truck and trailer</option>
                   <option value="other">Other equipment</option>
                 </select>
-                <p class="error-text">Pick what kind of unit is down.</p>
+                <p class="error-text" id="error-unit-type">Pick what kind of unit needs service.</p>
               </div>
-              <div class="field">
-                <label for="f-mmy">Make / model / year <span aria-hidden="true">(optional)</span></label>
-                <input id="f-mmy" name="make_model_year" maxlength="120" placeholder="e.g. 2019 Freightliner Cascadia">
-              </div>
+            </div>
+            <div class="field">
+              <label for="f-description">What is it doing? <span class="required-label">Required</span></label>
+              <textarea id="f-description" name="description" required minlength="10" maxlength="2000" aria-describedby="error-description" placeholder="What happened, when it started, and anything you already checked"></textarea>
+              <p class="error-text" id="error-description">Give the shop a short description of the problem.</p>
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend>Where it sits</legend>
+          <fieldset class="roadside-fields" id="roadside-fields" hidden>
+            <legend>Mobile or roadside details</legend>
             <div class="field">
-              <label for="f-location">Location</label>
+              <label for="f-location">Where is the unit?</label>
               <input id="f-location" name="location" maxlength="160" placeholder="Highway and mile marker, yard, or address">
             </div>
             <div class="field">
-              <label for="f-gps">GPS reading <span aria-hidden="true">(optional)</span></label>
+              <label for="f-gps">GPS reading <span>(optional)</span></label>
               <div class="geo-row">
                 <input id="f-gps" name="gps" maxlength="64" readonly placeholder="Not shared">
                 <button class="btn btn--steel btn--sm" type="button" id="geo-btn">Use my location</button>
@@ -352,51 +354,65 @@
                 <label for="f-move">Can the unit move?</label>
                 <select id="f-move" name="can_move">
                   <option value="">Select one</option>
-                  <option value="yes">Yes, it can be driven or towed in</option>
-                  <option value="no">No, it is stuck where it is</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                   <option value="unsure">Not sure</option>
                 </select>
               </div>
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend>The problem</legend>
-            <div class="field-row field-row--2">
-              <div class="field">
-                <label for="f-category">Problem category</label>
-                <select id="f-category" name="category">
-                  <option value="">Select one</option>
-                  <option value="engine">Engine or power loss</option>
-                  <option value="electrical">Electrical or lights</option>
-                  <option value="brakes">Brakes or air system</option>
-                  <option value="axles_suspension">Axles, wheels or suspension</option>
-                  <option value="tires">Tires</option>
-                  <option value="trailer_structure">Trailer structure or floor</option>
-                  <option value="ac_heat">AC or heat</option>
-                  <option value="welding_fab">Welding or fabrication job</option>
-                  <option value="other">Something else</option>
-                </select>
+          <details class="form-more">
+            <summary>Add fleet or unit details <span>Optional</span></summary>
+            <div class="form-more__body">
+              <div class="field-row field-row--2">
+                <div class="field">
+                  <label for="f-fleet">Company or fleet</label>
+                  <input id="f-fleet" name="fleet" autocomplete="organization" maxlength="120">
+                </div>
+                <div class="field">
+                  <label for="f-unit-number">Unit number</label>
+                  <input id="f-unit-number" name="unit_number" maxlength="40">
+                </div>
               </div>
-              <div class="field">
-                <label for="f-code">Fault code <span aria-hidden="true">(optional)</span></label>
-                <input id="f-code" name="fault_code" maxlength="40" placeholder="e.g. SPN 3216 FMI 4">
+              <div class="field-row field-row--2">
+                <div class="field">
+                  <label for="f-mmy">Make / model / year</label>
+                  <input id="f-mmy" name="make_model_year" maxlength="120" placeholder="e.g. 2019 Freightliner Cascadia">
+                </div>
+                <div class="field">
+                  <label for="f-code">Fault code</label>
+                  <input id="f-code" name="fault_code" maxlength="40" placeholder="e.g. SPN 3216 FMI 4">
+                </div>
+              </div>
+              <div class="field-row field-row--2">
+                <div class="field">
+                  <label for="f-category">Problem category</label>
+                  <select id="f-category" name="category">
+                    <option value="">Select one</option>
+                    <option value="engine">Engine or power loss</option>
+                    <option value="electrical">Electrical or lights</option>
+                    <option value="brakes">Brakes or air system</option>
+                    <option value="axles_suspension">Axles, wheels or suspension</option>
+                    <option value="tires">Tires</option>
+                    <option value="trailer_structure">Trailer structure or floor</option>
+                    <option value="ac_heat">AC or heat</option>
+                    <option value="welding_fab">Welding or fabrication job</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-response">Preferred response</label>
+                  <select id="f-response" name="preferred_response">
+                    <option value="">Select one</option>
+                    <option value="call">Phone call</option>
+                    <option value="text">Text message</option>
+                    <option value="either">Either works</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <label for="f-description">What is it doing?</label>
-              <textarea id="f-description" name="description" maxlength="2000" placeholder="What happened, when it started, anything you already checked"></textarea>
-            </div>
-            <div class="field">
-              <label for="f-response">Preferred response</label>
-              <select id="f-response" name="preferred_response">
-                <option value="">Select one</option>
-                <option value="call">Phone call</option>
-                <option value="text">Text message</option>
-                <option value="either">Either works</option>
-              </select>
-            </div>
-          </fieldset>
+          </details>
 
           <button class="btn btn--primary btn--block" type="submit">Send repair request</button>
           <p class="intake-demo-note">Private website concept. Test submissions go to the site developer for review and are not sent to the shop.</p>
@@ -452,30 +468,43 @@
 <section class="section section--tint" id="work">
   <div class="container">
     <div class="section__head">
-      <h2 class="display">Real work, real shop</h2>
-      <p class="lead">Shop photography goes here once the owner approves it. No stock filler, no staged shots.</p>
+      <p class="eyebrow">Gallery-ready</p>
+      <h2 class="display">Built to show the work</h2>
+      <p class="lead">No shop photography is available yet. These service illustrations demonstrate the finished gallery layout without presenting stock or generated scenes as completed work.</p>
     </div>
-    <!-- Photo slots only. Populate with business-owned or owner-approved photos
-         (shop bays, heavy trucks, brake and axle work, welding, aluminum
-         fabrication, electrical repairs, equipment, staff). Never fill these
-         with AI-generated or stock imagery presented as completed work. -->
-    <div class="gallery">
-      <figure class="ph"><div class="ph__frame">
-        <span class="ph__chip">Photo slot: shop bays &amp; heavy trucks</span>
-      </div></figure>
-      <figure class="ph"><div class="ph__frame">
-        <span class="ph__chip">Photo slot: trailer brake &amp; axle work</span>
-      </div></figure>
-      <figure class="ph"><div class="ph__frame">
-        <span class="ph__chip">Photo slot: welding &amp; aluminum fabrication</span>
-      </div></figure>
-      <figure class="ph"><div class="ph__frame">
-        <span class="ph__chip">Photo slot: electrical repair</span>
-      </div></figure>
-      <figure class="ph"><div class="ph__frame">
-        <span class="ph__chip">Photo slot: equipment &amp; staff</span>
-      </div></figure>
+    <div class="capability-gallery">
+      <figure class="capability-card capability-card--lead">
+        <div class="capability-card__visual" aria-hidden="true">
+          <svg viewBox="0 0 320 180"><path d="M25 122h260v-43l-41-7-33-45h-91v95H25zm112-81h64l25 37h-89zM70 122a30 30 0 1 0 60 0 30 30 0 0 0-60 0zm145 0a30 30 0 1 0 60 0 30 30 0 0 0-60 0z"/></svg>
+        </div>
+        <figcaption><strong>Heavy truck repair</strong><span>Future shop-bay and completed-repair photography</span></figcaption>
+      </figure>
+      <figure class="capability-card">
+        <div class="capability-card__visual" aria-hidden="true">
+          <svg viewBox="0 0 220 160"><circle cx="110" cy="80" r="55"/><circle cx="110" cy="80" r="22"/><path d="M110 25v33M110 102v33M55 80h33M132 80h33"/></svg>
+        </div>
+        <figcaption><strong>Brakes &amp; axles</strong><span>Close-up repair detail</span></figcaption>
+      </figure>
+      <figure class="capability-card">
+        <div class="capability-card__visual" aria-hidden="true">
+          <svg viewBox="0 0 220 160"><path d="M48 115l56-56 24 24-56 56zM115 48l14-14 43 43-14 14zM67 42l9 19M39 65l20 7M90 26v20"/></svg>
+        </div>
+        <figcaption><strong>Welding &amp; fabrication</strong><span>In-process craftsmanship</span></figcaption>
+      </figure>
+      <figure class="capability-card">
+        <div class="capability-card__visual" aria-hidden="true">
+          <svg viewBox="0 0 220 160"><path d="M95 19L54 91h42l-9 50 79-88h-48l18-34z"/></svg>
+        </div>
+        <figcaption><strong>Electrical diagnostics</strong><span>Testing and wiring work</span></figcaption>
+      </figure>
+      <figure class="capability-card">
+        <div class="capability-card__visual" aria-hidden="true">
+          <svg viewBox="0 0 220 160"><path d="M36 113h148M52 113V66h116v47M72 66V40h76v26M69 88h25M126 88h25"/><circle cx="78" cy="113" r="18"/><circle cx="144" cy="113" r="18"/></svg>
+        </div>
+        <figcaption><strong>Fleet maintenance</strong><span>Units, people and the shop</span></figcaption>
+      </figure>
     </div>
+    <p class="gallery-note">The layout is ready. Owner-approved photos can replace each illustration without redesigning the page.</p>
   </div>
 </section>
 
@@ -489,6 +518,7 @@
         <h3>Address</h3>
         <address class="addr">2800 Virgil Gray Dr<br>Brownwood, TX 76801</address>
         <a class="tel" href="tel:+13256436492">325-643-6492</a>
+        <a class="directions-link" href="https://www.google.com/maps/search/?api=1&amp;query=2800+Virgil+Gray+Dr+Brownwood+TX+76801" rel="noopener">Get directions</a>
       </div>
       <div class="loc-card">
         <h3>Hours</h3>
@@ -545,21 +575,9 @@
       </details>
       <details>
         <summary>Do you provide mobile or roadside service?</summary>
-        <div class="faq__a"><p>Call the shop at 325-643-6492 to confirm current availability. This website does not dispatch roadside service.</p></div>
+        <div class="faq__a"><p>Yes. Mobile and roadside repair are available, subject to technician availability and service area. For an immediate roadside need, call 325-643-6492.</p></div>
       </details>
     </div>
-  </div>
-</section>
-
-<div class="hazard" role="presentation"></div>
-
-<section class="ops-banner steel">
-  <div class="container">
-    <div>
-      <h2 class="display">What this site could do for the shop</h2>
-      <p>A preview of optional automations, from missed-call text-back to fleet maintenance reminders.</p>
-    </div>
-    <a class="btn btn--steel" href="/operations">See the operations preview</a>
   </div>
 </section>
 

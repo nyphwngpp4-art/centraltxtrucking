@@ -1,0 +1,12 @@
+{
+  "name": "central-texas-truck-trailer-repair-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check:syntax": "node --check app.js && node --check functions/api/breakdown.js && node --check functions/api/leads.js",
+    "validate:demo": "node scripts/validate-launch.mjs demo",
+    "validate:production": "node scripts/validate-launch.mjs production",
+    "check": "npm run check:syntax && npm run validate:demo",
+    "deploy:demo": "npm run validate:demo && npx wrangler pages deploy . --project-name=agavi-demo-central-tx-truck"
+  }
+}
