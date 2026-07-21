@@ -6,9 +6,9 @@ demonstration prepared for owner review; it is not the business's live site.
 ## Layout
 
 ```
-/                      index.html, thanks.html, call-us.html
+/                      index.html, operations.html, thanks.html, call-us.html
 /styles.css, /app.js   single stylesheet + dependency-free JS
-/assets/               schematic hero, icons, favicon, self-hosted display font
+/assets/               images, favicon, self-hosted display font
 /functions/api/        breakdown.js (POST intake), leads.js (GET, token-auth)
 /scripts/              dependency-free launch validation
 .github/workflows/     pull-request and main-branch quality gate
@@ -37,10 +37,10 @@ OWNER-CONFIRMATION.md  checklist to close before launch
 - The form explicitly states test submissions are not sent to the shop, and
   the success state promises no callback and no dispatch.
 - No photo upload (storage/deletion policies not configured yet).
-- Mobile and roadside repair are shown as available, with availability and
-  service-area caveats. No claims of towing, 24/7 coverage, response times,
-  service radius, review counts, certifications or warranties appear.
-- The official NAPA facility directory confirms the NAPA AutoCare affiliation.
+- No claims of towing, roadside service, 24/7 coverage, response times,
+  service radius, review counts, affiliations, certifications or warranties
+  anywhere. The NAPA directory listing and roadside service are recorded in
+  content.config.json as pending owner confirmation.
 
 ## Validate
 

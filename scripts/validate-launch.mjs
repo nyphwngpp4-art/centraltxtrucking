@@ -19,7 +19,9 @@ const requiredFiles = [
   "sitemap.xml",
   "_headers",
   "_redirects",
-  "assets/hero-schematic.svg",
+  "assets/hero.jpg",
+  "assets/hero-mobile.jpg",
+  "operations.html",
   "functions/api/breakdown.js",
   "functions/api/leads.js",
 ];
@@ -41,12 +43,27 @@ const sitemap = read("sitemap.xml");
 const headers = read("_headers");
 const config = JSON.parse(read("content.config.json"));
 
-if (existsSync("operations.html") || /\/operations/i.test(index + sitemap)) {
-  fail("The internal operations proposal must not ship with the customer site.");
+const operations = read("operations.html");
+if (!/Proposed/.test(operations) || !/noindex/.test(operations)) {
+  fail("operations.html must stay noindex and label every capability as proposed.");
 }
 
 if (/data-confirm=["']pending["']/.test(index)) {
   fail("A pending owner claim is still rendered in index.html.");
+}
+
+// Claims that require separate owner confirmation must never appear in
+// customer-facing markup while they are pending in content.config.json.
+const bannedClaims = [
+  [/napa/i, "NAPA affiliation"],
+  [/roadside (?:repair|service)s? (?:is|are) available/i, "roadside availability"],
+  [/mobile (?:service|repair)s? available/i, "mobile availability"],
+  [/24\/7|24 hours/i, "24/7 availability"],
+  [/\btowing\b/i, "towing"],
+  [/\[FIRST NAME\]/, "review attribution placeholder"],
+];
+for (const [pattern, label] of bannedClaims) {
+  if (pattern.test(index)) fail(`Unconfirmed claim in index.html: ${label}.`);
 }
 
 const ids = [...index.matchAll(/\sid=["']([^"']+)["']/g)].map(match => match[1]);

@@ -13,8 +13,8 @@ only to the developer).
 | 2 | Review attributions | Reviews section | CLOSED 2026-07-20: names verified against live Google listing screenshots (Kodie Scott, Russell Howard, Valerie Kroeker) |
 | 3 | Additional services: AC & heating, exhaust, floors & gates, fault code reading, sheet-metal fabrication, aluminum fabrication, inspections | Not currently rendered | Add only after the owner confirms each one |
 | 4 | Welding/fabrication FAQ answer | FAQ | Cautiously worded; confirm scope |
-| 5 | Mobile and roadside repair | Hero, services, form, FAQ | CLOSED 2026-07-20: confirmed by operator; availability and service area remain qualified |
-| 6 | NAPA AutoCare affiliation | Hero and trust strip | CLOSED 2026-07-20: verified in official NAPA facility directory, facility 675503 |
+| 5 | Mobile and roadside repair | Not currently claimed | REOPENED: no owner confirmation on record. FAQ says to call and confirm availability. Claim only after the owner confirms in writing |
+| 6 | NAPA AutoCare affiliation | Not currently claimed | REOPENED: NAPA directory listing (facility 675503) is third-party evidence. Show only after the owner confirms the affiliation is current |
 
 ## Facts researched but NOT shown (need confirmation before ever publishing)
 
@@ -26,15 +26,16 @@ only to the developer).
 
 ## Never claim without separate written confirmation
 
-24/7 availability, towing, guaranteed response times, a specific service
-radius, exact review counts or star ratings, BBB
-accreditation, certifications, warranties.
+24/7 availability, towing, mobile roadside service, NAPA or any other
+affiliation, guaranteed response times, a specific service radius, exact
+review counts or star ratings, BBB accreditation, certifications, warranties.
 
 ## Assets needed from the owner
 
 | # | Item | Notes |
 |---|------|-------|
-| 10 | Shop photography | The concept now uses clearly illustrative service cards. Replace them with bays, trucks, repair work, equipment and staff only when owner-approved photography becomes available |
+| 10 | Shop photography | Labeled photo slots on the page. Fill with bays, trucks, repair work, equipment and staff; business-owned or owner-approved only, never AI-generated or stock presented as the shop's work |
+| 11 | Answer to "mobile or roadside service?" | FAQ currently says to call and confirm; replace with the owner's definitive answer |
 
 ## Launch-day technical flips (developer)
 
